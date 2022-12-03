@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>White Crow</title>
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <style>
+         .swiper {
+        width: 350px;
+        height:450px;
+        
+        left: 50%;
+        top: 50%;
+        margin: auto;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+      .swiper-button-next {    
+  background-image: url('images/next_.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 20px;
+  height: 25px;
+  box-shadow: 0 0 5px rgb(248, 247, 247);
+  
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+ 
+  background-image: url('images/back_.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 20px;
+  height: 25px;
+  box-shadow: 0 0 5px rgb(248, 247, 247);
+  
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+
+      .socialswa{
+	width: 50px;
+	height: 50px;
+	/*background-color: #e46c0a;*/
+	border-radius: 30px 0 0 30px;
+	position: fixed;
+	right: 0;
+	bottom: 25px;
+    z-index: 20;
+      }
+
+
+    .myBtn{
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+}
+.box {
+  background: linear-gradient(to right, rgb(243, 242, 238), rgb(242, 232, 220));
+  color: rgb(9, 9, 9);
+  --width: 300px;
+  margin-bottom: 20px;
+  --height: calc(var(--width) / 5);
+  width: var(--width);
+  height:var(--height);
+  text-align:center;
+  align-items: center;
+  line-height: 10px;
+  font-size: 10px;
+ 
+  font-family: sans-serif;
+  
+  letter-spacing: 0.2em;
+  border: 1px solid rgb(31, 31, 29);
+  border-radius: 2em;
+  transform: perspective(500px) rotateY(-15deg);
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: perspective(500px) rotateY(15deg);
+  text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  left: -100%;
+  transition: 0.5s;
+}
+
+.box:hover::before {
+  left: 100%;
+}
+.imgsize{
+  width:65px;
+  height:65px;
+ 
+  float: left;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="socialswa">
+                    
+      call us <a href="tel:919325715692">
+        <img style="width: 75%;" src="images/call.png" alt="">
+      </a> 
+    
+
+  </div>
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+              <!-- <img style="width: 250px;height: 80px;"  src="images/logo.jpeg" alt=""> -->
+                             <hr>
+                <!-- <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a> -->
+            </div>
+           
+            <!-- <a href="#bora">
+            <button type="button" class="btn btn-danger btn-lg " style="width: 80px;margin: 20px;">Bora</button></a>
+            <a href="#rahul"><button type="button" class="btn btn-danger btn-lg "style="width: 80px;margin: 20px;">Rahul </button></a>
+            <a href="#christ"><button type="button" class="btn btn-danger btn-lg "style="width: 80px;margin: 20px;">Christ </button></a>
+            <a href="#vision"><button type="button" class="btn btn-danger btn-lg "style="width: 80px;margin: 20px;">Vision </button></a>
+            <a href="#ergonomic"><button type="button" class="btn btn-danger btn-lg  "style="width: 120px;margin: 20px;">Ergonomic</button></a>  -->
+        </div>
+        <!-- <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video> -->
+
+        <div class="container">
+          <div class="row">
+              <h3 class="text-center"> CHRIST COLLEGE PUNE </h3><br>
+              <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="images/christ/1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/2.jpg" />
+                        </div>
+                        <!-- <div class="swiper-slide">
+                          <img src="images/christ/3.jpg" />
+                        </div> -->
+                        <div class="swiper-slide">
+                          <img src="images/christ/4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/7.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/8.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/9.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/10.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/11.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/12.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/13.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/14.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/15.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/16.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/17.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/18.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/19.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/christ/20.jpg" />
+                        </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+          </div>
+      </div>
+     
+      <br><br><br>
+      <div class="col-lg-4 col-md-4 col-5" > 
+        <a href="index.html"><button  type="submit" class="form-control mt-4" id="submit" style="background-color:hsl(0, 100%, 100%);width: 150px;margin-left: 28%;color: black;">Back to Home</button></a> 
+      </div>
+      <br><br> <br>
+    </header>
+     
+   
+    <!--scripts loaded here -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "cube",
+          grabCursor: true,
+          loop: true,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+          cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+          },
+          navigation: {
+        nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+         },
+        });
+      </script>
+  </body>
+</html>
