@@ -63,6 +63,7 @@
   letter-spacing: 0.2em;
   border: 1px solid rgb(31, 31, 29);
   border-radius: 2em;
+  animation: myanim 3s infinite;
   transform: perspective(500px) rotateY(-15deg);
   text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
@@ -71,6 +72,18 @@
   overflow: hidden;
   cursor: pointer;
 }
+
+@keyframes myanim {
+            30% {
+               transform: perspective(500px) rotateY(-35deg);
+            }
+            60% {
+               transform: perspective(500px) rotateY(35deg);
+            }
+            60% {
+               transform: perspective(500px) rotateY(-35deg);
+            }
+         }
 
 .box:hover {
   transform: perspective(500px) rotateY(15deg);
