@@ -114,12 +114,50 @@
 .logo-img{
   width: 250px;
   height: 80px;  
-  border-color: black white black white;
+  /* border-color: black white black white; */
     /* box-shadow: rgba(0,0,0,0.8) 0px 0px 10px; */
-    box-shadow: 0 0 15px rgba(209, 234, 234, 0.8);
+    /* box-shadow: 0 0 15px rgba(209, 234, 234, 0.8); */
     /* filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.8));   */
     
   padding: 8px;
+}
+.block {
+	position: relative;
+  margin-left: 20%;
+	/* margin: 300px auto 0; */
+	width: 255px;
+	height: 85px;
+	background: linear-gradient(0deg, #000, #090909);
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #4c4949, #efeff3, #e2d8d8,#f3f3ef, #e8e5e5, #9c979c, 
+		#efeff2, #625f5f,#f7f7f4, #878383);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
 }
 
  
@@ -138,9 +176,9 @@
         <div class="header-content">
           <br>
             <div class="inner">
-             <!-- <div class="rect" > -->
+              <div class="block" > 
             <img class="logo-img"  src="images/logo.jpeg" alt="">
-            <!-- </div> -->
+            </div> 
             <br><br>
                 <h4><u>EDUCATION PORTFOLIO</u> </h4>
                 <br>
